@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -23,95 +23,98 @@
         alt="Your profile picture"
       />
     </header>
-    <div class="post">
-      <div class="header">
-        <img
-          class="avatar"
-          src="images/avatar-vangogh.jpg"
-          alt="Vincent van Gogh profile photo"
-        />
+    <main id="main">
+      <div class="post">
+        <div class="header">
+          <img
+            class="avatar"
+            src="images/avatar-vangogh.jpg"
+            alt="Vincent van Gogh profile photo"
+          />
+          <div>
+            <div><span class="name">Vincent van Gogh</span></div>
+            <span class="location">Zundert, Netherlands</span>
+          </div>
+        </div>
+
         <div>
-          <div><span class="name">Vincent van Gogh</span></div>
-          <span class="location">Zundert, Netherlands</span>
+          <img
+            class="img"
+            src="images/post-vangogh.jpg"
+            alt="Post image by Vincent van Gogh"
+          />
+        </div>
+        <div class="interactions">
+          <button class="like" type="button" aria-label="Like"></button>
+          <button class="comment" type="button" aria-label="Comment"></button>
+          <button class="share" type="button" aria-label="Share"></button>
+        </div>
+        <div class="like-count">21,492 likes</div>
+        <div class="desc">
+          <span class="name">vincey1853</span> just took a few mushrooms lol
         </div>
       </div>
+      <div class="post">
+        <div class="header">
+          <img
+            class="avatar"
+            src="images/avatar-courbet.jpg"
+            alt="Vincent van Gogh profile photo"
+          />
+          <div>
+            <div><span class="name">Gustave Courbet</span></div>
+            <span class="location">Ornans, France</span>
+          </div>
+        </div>
 
-      <div>
-        <img
-          class="img"
-          src="images/post-vangogh.jpg"
-          alt="Post image by Vincent van Gogh"
-        />
-      </div>
-      <div class="interactions">
-        <button class="like" type="button" aria-label="Like"></button>
-        <button class="comment" type="button" aria-label="Comment"></button>
-        <button class="share" type="button" aria-label="Share"></button>
-      </div>
-      <div class="like-count">21,492 likes</div>
-      <div class="desc">
-        <span class="name">vincey1853</span> just took a few mushrooms lol
-      </div>
-    </div>
-    <div class="post">
-      <div class="header">
-        <img
-          class="avatar"
-          src="images/avatar-vangogh.jpg"
-          alt="Vincent van Gogh profile photo"
-        />
         <div>
-          <div><span class="name">Vincent van Gogh</span></div>
-          <span class="location">Zundert, Netherlands</span>
+          <img
+            class="img"
+            src="images/post-courbet.jpg"
+            alt="Post image by Vincent van Gogh"
+          />
+        </div>
+        <div class="interactions">
+          <button class="like" type="button" aria-label="Like"></button>
+          <button class="comment" type="button" aria-label="Comment"></button>
+          <button class="share" type="button" aria-label="Share"></button>
+        </div>
+        <div class="like-count">12,502 likes</div>
+        <div class="desc">
+          <span class="name">gus1819 </span>i'm feelin a bit stressed tbh
         </div>
       </div>
+      <div class="post" id="last-post">
+        <div class="header">
+          <img
+            class="avatar"
+            src="images/avatar-ducreux.jpg"
+            alt="Vincent van Gogh profile photo"
+          />
+          <div>
+            <div><span class="name">Joseph Ducreux</span></div>
+            <span class="location">Paris, France</span>
+          </div>
+        </div>
 
-      <div>
-        <img
-          class="img"
-          src="images/post-vangogh.jpg"
-          alt="Post image by Vincent van Gogh"
-        />
-      </div>
-      <div class="interactions">
-        <button class="like" type="button" aria-label="Like"></button>
-        <button class="comment" type="button" aria-label="Comment"></button>
-        <button class="share" type="button" aria-label="Share"></button>
-      </div>
-      <div class="like-count">21,492 likes</div>
-      <div class="desc">
-        <span class="name">vincey1853</span> just took a few mushrooms lol
-      </div>
-    </div>
-    <div class="post">
-      <div class="header">
-        <img
-          class="avatar"
-          src="images/avatar-vangogh.jpg"
-          alt="Vincent van Gogh profile photo"
-        />
         <div>
-          <div><span class="name">Vincent van Gogh</span></div>
-          <span class="location">Zundert, Netherlands</span>
+          <img
+            class="img"
+            src="images/post-ducreux.jpg"
+            alt="Post image by Vincent van Gogh"
+          />
+        </div>
+        <div class="interactions">
+          <button class="like" type="button" aria-label="Like"></button>
+          <button class="comment" type="button" aria-label="Comment"></button>
+          <button class="share" type="button" aria-label="Share"></button>
+        </div>
+        <div class="like-count">15,137 likes</div>
+        <div class="desc">
+          <span class="name">jd1735</span> gm friends! which coin are YOU
+          stacking up today?? post below and WAGMI!
         </div>
       </div>
-
-      <div>
-        <img
-          class="img"
-          src="images/post-vangogh.jpg"
-          alt="Post image by Vincent van Gogh"
-        />
-      </div>
-      <div class="interactions">
-        <button class="like" type="button" aria-label="Like"></button>
-        <button class="comment" type="button" aria-label="Comment"></button>
-        <button class="share" type="button" aria-label="Share"></button>
-      </div>
-      <div class="like-count">21,492 likes</div>
-      <div class="desc">
-        <span class="name">vincey1853</span> just took a few mushrooms lol
-      </div>
-    </div>
+    </main>
   </body>
 </html>

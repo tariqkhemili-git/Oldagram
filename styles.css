@@ -1,3 +1,8 @@
+:root {
+  /* Header height determines the body top padding so content isn't hidden underneath */
+  --header-height: 35px;
+}
+
 html,
 body {
   margin: 0;
@@ -5,7 +10,9 @@ body {
   font-family: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   display: block;
   margin: 0 auto;
-  max-width: max-content;
+  max-width: 500px;
+  /* reserve the header height so content isn't hidden underneath when the header is fixed */
+  padding-top: var(--header-height);
 }
 
 header {
@@ -14,6 +21,16 @@ header {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #c6c6c6;
+  /* fix header to the top of the viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* center it with max-width */
+  max-width: 500px;
+  z-index: 9999; /* stay on top of other content while scrolling */
+  background-color: #fff; /* ensure the content underneath doesn't show through */
+  box-sizing: border-box;
 }
 
 .user-avatar {
@@ -24,6 +41,14 @@ header {
 
 .logo {
   width: 100px;
+}
+
+.post {
+  border-bottom: 30px solid #ededed;
+}
+
+#last-post {
+  border-bottom: none;
 }
 
 .post .header {
