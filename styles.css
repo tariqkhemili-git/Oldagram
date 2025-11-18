@@ -93,7 +93,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 24px;
-  -webkit-appearance: none; /* remove default button styles on mobile */
   appearance: none;
 }
 
